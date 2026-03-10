@@ -48,7 +48,7 @@ class OllamaAgent:
             model=self.cfg.model,
             messages=weather_input,
             tools=[WEATHER_TOOL_DEFINITION],
-            temperature=0.2  # Estabilidade máxima para modelos pequenos
+            temperature=self.cfg.temperature  # Estabilidade máxima para modelos pequenos
         )
 
         msg = response.choices[0].message
@@ -71,7 +71,9 @@ class OllamaAgent:
             # Segunda parte: gerar resposta final
             final_response = self.client.chat.completions.create(
                 model=self.cfg.model,
-                messages=self.messages
+                messages=self.messages,
+                temperature=self.cfg.temperature,
+                max_tokens=self.cfg.max_tokens
             )
             ans = final_response.choices[0].message.content
 
