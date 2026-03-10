@@ -4,7 +4,7 @@ MeteoAI é um Agente LLM com Tool de Previsão do Tempo usando a API da Open-Met
 ## Requisitos
 - Python 3.12+
 - Ollama 0.8.0+
-- Docker (opcional, para execução em contêiner)
+- Docker 4.4.2+ (opcional, para execução em contêiner)
 
 ## Estrutura do Projeto
 ```
