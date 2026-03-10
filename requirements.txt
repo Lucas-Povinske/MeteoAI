@@ -1,0 +1,4 @@
+openai>=2.24.0
+python-dotenv>=0.21.0
+requests>=2.32.4
+gradio>=6.8.0
