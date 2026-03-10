@@ -50,7 +50,7 @@ MeteoAI/
    ```bash
    pip install -r requirements.txt
    ```
-4. Configure as variáveis de ambiente no arquivo `.env`. use o arquivo `.env.example` como referência:
+4. Configure as variáveis de ambiente no arquivo `.env`. Use o arquivo `.env.example` como referência:
    ```bash
    cp .env.example .env # Linux
    copy .env.example .env # Windows
