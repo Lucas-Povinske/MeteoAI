@@ -23,4 +23,3 @@ Thumbs.db
 
 # Env files (segredos)
 .env
-.env.*
