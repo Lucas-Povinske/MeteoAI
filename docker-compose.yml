@@ -5,7 +5,7 @@ services:
     ports:
       - "7860:7860"
     env_file:
-      - .env
+      - .env.example
     environment:
       OLLAMA_BASE_URL: http://host.docker.internal:11434/v1
     extra_hosts:

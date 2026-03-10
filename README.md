@@ -43,15 +43,18 @@ MeteoAI/
 2. Crie um ambiente virtual e ative-o:
    ```bash
    python -m venv .venv
-   source .venv/bin/activate  # Linux/Mac
+   source .venv/bin/activate  # Linux
    .venv\Scripts\activate     # Windows
    ```
 3. Instale as dependências:
    ```bash
    pip install -r requirements.txt
    ```
-4. Configure as variáveis de ambiente no arquivo `.env
-
+4. Configure as variáveis de ambiente no arquivo `.env`. Use o arquivo `.env.example` como referência:
+   ```bash
+   cp .env.example .env # Linux
+   copy .env.example .env # Windows
+   ```
 5. Inicie o agente:
    ```bash
    python src/main.py
