@@ -19,4 +19,4 @@ def run_gradio(agent: OllamaAgent) -> None:
         submit_btn.click(fn=process_input, inputs=user_input, outputs=output)
 
     # Inicia a interface Gradio
-    demo.launch()
+    demo.launch(server_name="0.0.0.0", server_port=7860)
